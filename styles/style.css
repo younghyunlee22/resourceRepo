@@ -48,19 +48,19 @@ a:active {
 
 .nav-subject {
   margin-top: 10px;
+  font-size: 18px;
+}
+
+.table {
+  font-size: 15px;
 }
 
 div > span {
-  /* padding: 5px; */
   color: #fcd5ce;
 }
 
+/* top-left-logo */
 #navbar-logo {
   padding-left: 50px;
   color: palevioletred;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
 }

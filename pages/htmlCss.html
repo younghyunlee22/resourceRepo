@@ -78,37 +78,170 @@
     </nav>
     <!-- end of navbar -->
     <div class="container" style="padding-top: 70px">
-      <div class="sidebar">
-        <div class="row">
-          <!-- sidebar -->
-          <div class="col-md-3 sidebar h2">
-            <ul class="navbar-nav flex-column mt-4">
-              <h2>Subject</h2>
-              <li class="nav-subject">
-                <a href="./htmlCss.html" class="p-1">HTML/CSS</a>
-              </li>
-              <li class="nav-subject">
-                <a href="./javaScript.html" class="p-1">JavaScript</a>
-              </li>
-              <li class="nav-subject">
-                <a href="./react.html" class="p-1">React</a>
-              </li>
-            </ul>
-          </div>
-          <!-- end of sidebar -->
-          <!-- main content -->
-          <div class="col-md-9 h2 mt-4">
-            <h2 style="color: coral">
-              <i class="fab fa-html5"></i>HTML <i class="fab fa-css3"></i> CSS
-            </h2>
-          </div>
-          <!-- end of main content -->
+      <div class="row">
+        <!-- sidebar -->
+        <div class="col-md-3 sidebar h2">
+          <ul class="navbar-nav flex-column mt-4">
+            <h2>Subjects</h2>
+            <li class="nav-subject">
+              <a href="./htmlCss.html" class="p-1">HTML/CSS</a>
+            </li>
+            <li class="nav-subject">
+              <a href="./javaScript.html" class="p-1">JavaScript</a>
+            </li>
+            <li class="nav-subject">
+              <a href="./react.html" class="p-1">React</a>
+            </li>
+          </ul>
         </div>
+        <!-- end of sidebar -->
+        <!-- main content -->
+        <div class="col-md-9 h2 mt-4">
+          <h2 style="color: coral">
+            <i class="fab fa-html5"></i>HTML <i class="fab fa-css3"></i> CSS
+          </h2>
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr class="table-warning">
+                <th scope="col" width="10%">#</th>
+                <th scope="col" width="30%">Source</th>
+                <th scope="col" width="60%">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mozilla</td>
+                <td>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    >mdn HTML Tutorials</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>scrimba</td>
+                <td>
+                  <a href="https://scrimba.com/learn/htmlandcss"
+                    >Learn HTML and CSS</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>CSS-Tricks</td>
+                <td>
+                  <a
+                    href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                    >A guide to flexbox</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Flexbox Froggy</td>
+                <td>
+                  <a href="https://flexboxfroggy.com/">Flexbox Froggy Game</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>HTML Cheat Sheet</td>
+                <td>
+                  <a href="https://htmlcheatsheet.com/">HTML CheatSheet</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row" style="margin-top: 50px">
+            <h2>Help us add more to the list!</h2>
+            <form style="font-size: 13px">
+              <div class="mb-3">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="html-css"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >HTML/CSS</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="javaScript"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >JavaScript</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio3"
+                    value="react"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >React</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="source" class="form-label">Source</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="source"
+                  placeholder="Enter the source"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="link" class="form-label">Link</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="link"
+                  placeholder="Enter the link"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <!-- end of main content -->
       </div>
     </div>
-    <footer class="py-3 bg-dark mt-auto">
-      <div class="footer-box">
-        <span style="font-size: small">© Younghyun Lee</span>
+    <footer class="container-fluid py-3 bg-dark mt-auto">
+      <div class="row footer-box">
+        <div class="col-md-6 d-flex align-items-center">
+          <span style="font-size: small">© Younghyun Lee</span>
+        </div>
+        <div class="col-md-6">
+          <form class="d-flex align-items-center flex-end w-50">
+            <label
+              for="exampleInputEmail1"
+              class="form-label mb-0"
+              style="color: white; padding-right: 20px"
+              >Newsletter</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="example@email.com"
+            />
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </footer>
     <script

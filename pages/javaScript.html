@@ -83,7 +83,7 @@
           <!-- sidebar -->
           <div class="col-md-3 sidebar h2">
             <ul class="navbar-nav flex-column mt-4">
-              <h2>Subject</h2>
+              <h2>Subjects</h2>
               <li class="nav-subject">
                 <a href="./htmlCss.html" class="p-1">HTML/CSS</a>
               </li>
@@ -113,14 +113,80 @@
                 JavaScript
               </h2>
             </section>
+            <table class="table table-hover table-bordered">
+              <thead>
+                <tr class="table-warning">
+                  <th scope="col" width="10%">#</th>
+                  <th scope="col" width="30%">Source</th>
+                  <th scope="col" width="60%">Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>freecodecamp</td>
+                  <td>
+                    <a
+                      href="https://www.freecodecamp.org/news/full-javascript-course-for-beginners/"
+                      >Full JavaScript Course for Beginners</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>HTML Cheat Sheet</td>
+                  <td>
+                    <a href="https://htmlcheatsheet.com/js/">JS CheatSheet</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>javascript.info</td>
+                  <td>
+                    <a href="https://javascript.info/"
+                      >The Modern JavaScript Tutorial</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Tech With Tim</td>
+                  <td>
+                    <a href="https://www.youtube.com/watch?v=E3XxeE7NF30"
+                      >Learn JavaScript With This ONE Project</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <!-- end of main content -->
         </div>
       </div>
     </div>
-    <footer class="py-3 bg-dark mt-auto">
-      <div class="footer-box">
-        <span style="font-size: small">© Younghyun Lee</span>
+    <footer class="container-fluid py-3 bg-dark mt-auto">
+      <div class="row footer-box">
+        <div class="col-md-6 d-flex align-items-center">
+          <span style="font-size: small">© Younghyun Lee</span>
+        </div>
+        <div class="col-md-6">
+          <form class="d-flex align-items-center flex-end w-50">
+            <label
+              for="exampleInputEmail1"
+              class="form-label mb-0"
+              style="color: white; padding-right: 20px"
+              >Newsletter</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="example@email.com"
+            />
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </footer>
     <script
